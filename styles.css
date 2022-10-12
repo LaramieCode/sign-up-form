@@ -3,3 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.main-container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(images/auroraborealis.jpg);
+    background-position: center;
+}
