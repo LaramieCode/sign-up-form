@@ -18,26 +18,26 @@
                     <legend>Sign up</legend>
                     <div class="groupRow">
                         <div class="inputGroup">
-                            <label for="userUserName">username</label>
-                            <input type="text" name="userName" id="userUserName">
-                            <p>username valid</p>
+                            <label for="userUserName">*username</label>
+                            <input type="text" name="userName" id="userUserName" required minlength="5" maxlength="12">
+                            <p class="validity">you must use atleast 5 charactors</p>
                         </div>
                         <div class="inputGroup">
-                            <label for="userEmail">email address</label>
-                            <input type="email" name="emailAddress" id="userEmail">
-                            <p>email address valid</p>
+                            <label for="userEmail">*email address</label>
+                            <input type="email" name="emailAddress" id="userEmail" required>
+                            <p class="validity">email address valid</p>
                         </div>
                     </div>
                     <div class="groupRow">
                         <div class="inputGroup">
-                            <label for="userPassword">password</label>
-                            <input type="password" name="password" id="userPassword">
-                            <p>password invalid</p>
+                            <label for="userPassword">*password</label>
+                            <input type="password" name="password" id="userPassword" required minlength="8" maxlength="20">
+                            <p class="validity">password invalid</p>
                         </div>
                         <div class="inputGroup">
-                            <label for="userConfirmPassword">confirm password</label>
-                            <input type="password" name="userConfirmPassword" id="confirmPassword">
-                            <p>password does not match</p>
+                            <label for="userConfirmPassword">*confirm password</label>
+                            <input type="password" name="userConfirmPassword" id="confirmPassword" required minlength="8" maxlength="20">
+                            <p class="validity">password does not match</p>
                         </div>
                     </div>
                     <div class="groupRow">

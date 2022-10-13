@@ -8,9 +8,18 @@
     --main_color:  0, 0, 0;
     --white: rgb(255, 255, 255);
 }
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1 {
+    font-family: "Brush Script MT", cursive;
+}
 
-h1, h2, p, legend, label {
+h1, h2, p, legend, label, .submitBtn {
     color: var(--white)
+}
+h2 {
+    padding: 20px 0;
 }
 
 .main-container {
@@ -30,11 +39,12 @@ h1, h2, p, legend, label {
     box-shadow: 0 0 20px rgba(var(--main_color), 0.5);
     text-align: center;
     padding: 20px 10px;
+    border-radius: 20px;
 }
 
 fieldset {
     border: 0;
-    background-color: rgba(var(--main_color), 0.1);
+    /* background-color: rgba(var(--main_color), 0.1); */
     padding: 20px 0;
 }
 
@@ -52,22 +62,47 @@ legend {
 .groupRow {
     display: flex;
     justify-content: center;
+    gap: 5%;
 }
 .inputGroup {
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 40%;
+    gap: 5px;
 }
 .inputGroup > label,
 .inputGroup > p {
     align-self: flex-start;
+    font-size: 1.2rem;
 }
 
 input {
     font-size: 1.2rem;
     line-height: 25px;
+    border: none;
 }
 
 .submitBtn {
-    width: 70%;
+    width: 35%;
+    background-color: rgb(0, 0, 0, .4);
+    border: none;
+    box-shadow: 0 0 5px rgb(0, 0, 0, .7);
+    border-radius: 5px;
+}
+
+.validity {
+    visibility: hidden;
+}
+
+
+input:invalid {
+    box-shadow: 0 0 10px rgb(255, 0, 0);
+}
+input:focus-visible {
+    outline: none;
+    border: none;
+    box-shadow:0 0 10px rgb(0, 204, 255);
+}
+input:valid {
+    box-shadow: 0 0 10px rgb(0, 255, 0);
 }
