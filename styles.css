@@ -2,7 +2,15 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white;
+}
+
+:root {
+    --main_color:  0, 0, 0;
+    --white: rgb(255, 255, 255);
+}
+
+h1, h2, p, legend, label {
+    color: var(--white)
 }
 
 .main-container {
@@ -10,4 +18,56 @@
     height: 100vh;
     background-image: url(images/auroraborealis.jpg);
     background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sign-up-container {
+    width: 600px;
+    height: auto;
+    background-color: rgba(var(--main_color), 0.3);
+    box-shadow: 0 0 20px rgba(var(--main_color), 0.5);
+    text-align: center;
+    padding: 20px 10px;
+}
+
+fieldset {
+    border: 0;
+    background-color: rgba(var(--main_color), 0.1);
+    padding: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+legend {
+    font-size: 1.5rem;
+}
+
+.groupRow {
+    display: flex;
+    justify-content: center;
+}
+.inputGroup {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+.inputGroup > label,
+.inputGroup > p {
+    align-self: flex-start;
+}
+
+input {
+    font-size: 1.2rem;
+    line-height: 25px;
+}
+
+.submitBtn {
+    width: 70%;
 }

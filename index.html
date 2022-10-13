@@ -16,21 +16,33 @@
             <fieldset>
                 <form action="">
                     <legend>Sign up</legend>
-
-                    <label for="userUserName">username</label>
-                    <input type="text" name="userName" id="userUserName">
-
-                    <label for="userEmail">email address</label>
-                    <input type="email" name="emailAddress" id="userEmail">
-
-                    <label for="userPassword">password</label>
-                    <input type="password" name="password" id="userPassword">
-
-                    <label for="userConfirmPassword">confirm password</label>
-                    <input type="password" name="userConfirmPassword" id="confirmPassword">
-
-                    <button type="submit">Create account</button>
-                    <button class="btnLogIn">Log in</button>
+                    <div class="groupRow">
+                        <div class="inputGroup">
+                            <label for="userUserName">username</label>
+                            <input type="text" name="userName" id="userUserName">
+                            <p>username valid</p>
+                        </div>
+                        <div class="inputGroup">
+                            <label for="userEmail">email address</label>
+                            <input type="email" name="emailAddress" id="userEmail">
+                            <p>email address valid</p>
+                        </div>
+                    </div>
+                    <div class="groupRow">
+                        <div class="inputGroup">
+                            <label for="userPassword">password</label>
+                            <input type="password" name="password" id="userPassword">
+                            <p>password invalid</p>
+                        </div>
+                        <div class="inputGroup">
+                            <label for="userConfirmPassword">confirm password</label>
+                            <input type="password" name="userConfirmPassword" id="confirmPassword">
+                            <p>password does not match</p>
+                        </div>
+                    </div>
+                    <div class="groupRow">
+                        <button class="submitBtn" type="submit">Create account</button>
+                    </div>
                 </form>
             </fieldset>
         </div>
